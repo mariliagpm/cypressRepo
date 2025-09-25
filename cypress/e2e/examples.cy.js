@@ -56,5 +56,31 @@ describe('TesteSuit', () => {
 
     })
 
+     it('testing4', () => {
+        const loginPage = new LoginPage();
+        const homePage= new HomePage();
+        cy.visit('/')
+        loginPage.checkHeader();
+        loginPage.fillUserName(data.username);
+        loginPage.fillPassword(data.password);
+        loginPage.clickLoginButton();
+        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+        homePage.checkHeader();
+
+    })
+
+    
+        it('testing5',{ tags: ['@regression', '@login']}, () => {
+        const loginPage = new LoginPage();
+        const homePage= new HomePage();
+        cy.visit('/')
+        loginPage.checkHeader();
+        loginPage.fillUserName(data.username);
+        loginPage.fillPassword(data.password);
+        loginPage.clickLoginButton();
+        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+        homePage.checkHeader();
+
+    })
    
 })
