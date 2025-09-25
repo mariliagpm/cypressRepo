@@ -28,11 +28,7 @@ jobs:
     container: cypress/browsers:22.15.0
     steps:
       - name: Checkout
-        uses: actions/checkout@v4   
-      - name: Clean existing gh-pages content
-        run:  |
-          git rm -rf .
-          git clean -fdx    
+        uses: actions/checkout@v4     
       - name: Cypress run 
         uses: cypress-io/github-action@v6
         with: 
