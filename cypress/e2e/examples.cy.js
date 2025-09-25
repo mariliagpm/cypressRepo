@@ -14,7 +14,7 @@ describe('TesteSuit', () => {
 
     })
 
-    it('testing1 @regression', () => {
+    it('testing1', () => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')
@@ -43,7 +43,7 @@ describe('TesteSuit', () => {
 
 
 
-        it('testing3 @regression'  , () => {
+        it('testing3'  , () => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')
@@ -56,7 +56,7 @@ describe('TesteSuit', () => {
 
     })
 
-     it('testing4 @smoke', () => {
+     it('testing4', () => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')
