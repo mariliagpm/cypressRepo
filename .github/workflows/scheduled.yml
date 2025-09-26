@@ -2,11 +2,11 @@ name: schedule
 
 on:
   schedule: 
-   - cron: "1 12 * * *"
-   - cron: "1 15 * * *"
-   - cron: "1 8 * * *"
-  pull_request:
-    branches: [ "master" ]
+   - cron: "3 12 * * *"
+   - cron: "3 15 * * *"
+   - cron: "3 8 * * *"
+  push:
+    branches: master
   
 
 env: 
