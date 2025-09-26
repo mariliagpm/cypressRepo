@@ -125,7 +125,21 @@ describe('TesteSuit', () => {
     })   
    
 
-    it('testing299', { tags: ['@smoke'] }, () => {
+    it('testing299', { tags: ['@smoke', '@regression'] }, () => {
+        const loginPage = new LoginPage();
+        const homePage= new HomePage();
+        cy.visit('/')
+        loginPage.checkHeader();
+        loginPage.fillUserName(data.username);
+        loginPage.fillPassword(data.password);
+        loginPage.clickLoginButton();
+        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+        homePage.checkHeader();
+
+    })   
+
+
+    it('testing399', { tags: ['@smoke'] }, () => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')

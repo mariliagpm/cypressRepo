@@ -1,0 +1,79 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1758913855370' stop='1758913864652'>
+    <name>TesteSuit</name>
+    <title>TesteSuit</title>
+    <test-cases>
+        <test-case start='1758913855382' status='passed' stop='1758913857400'>
+            <name>testing1</name>
+            <title>testing1</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1758913857409' status='passed' stop='1758913858394'>
+            <name>testing2</name>
+            <title>testing2</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1758913858401' status='passed' stop='1758913859273'>
+            <name>testing3</name>
+            <title>testing3</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1758913859278' status='passed' stop='1758913860146'>
+            <name>testing4</name>
+            <title>testing4</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1758913860152' status='passed' stop='1758913861063'>
+            <name>testing5</name>
+            <title>testing5</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1758913861069' status='passed' stop='1758913861999'>
+            <name>testing6</name>
+            <title>testing6</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1758913862006' status='passed' stop='1758913862862'>
+            <name>testing7</name>
+            <title>testing7</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1758913862868' status='passed' stop='1758913863753'>
+            <name>testing18 </name>
+            <title>testing18 </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1758913863760' status='passed' stop='1758913864652'>
+            <name>testing299</name>
+            <title>testing299</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
