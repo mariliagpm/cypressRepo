@@ -111,7 +111,7 @@ describe('TesteSuit', () => {
     })   
 
 
-    it('testing18 ' ,{ tags: ['@smoke'] }, () => {
+    it('testing8 ' ,{ tags: ['@smoke'] }, () => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')
@@ -125,7 +125,7 @@ describe('TesteSuit', () => {
     })   
    
 
-    it('testing299', { tags: ['@smoke', '@regression'] }, () => {
+    it('testing9', { tags: ['@smoke', '@regression'] }, () => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')
@@ -139,7 +139,7 @@ describe('TesteSuit', () => {
     })   
 
 
-    it('testing399', { tags: ['@smoke'] }, () => {
+    it('testing10', { tags: ['@smoke'] }, () => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')
@@ -152,7 +152,20 @@ describe('TesteSuit', () => {
 
     })   
 
-    it('testing499', { tags: ['@smoke'] }, () => {
+    it('testing11', { tags: ['@smoke'] }, () => {
+        const loginPage = new LoginPage();
+        const homePage= new HomePage();
+        cy.visit('/')
+        loginPage.checkHeader();
+        loginPage.fillUserName(data.username);
+        loginPage.fillPassword(data.password);
+        loginPage.clickLoginButton();
+        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+        homePage.checkHeader();
+
+    })   
+
+     it('testing40', { tags: ['@smoke'] }, () => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')
