@@ -27,7 +27,7 @@ env:
 
 jobs:
   test:
-  - name: Remove files from specific directory
+    name: Remove files from specific directory
         run:|
           rm -rf allure-results
     name: Cypress run
