@@ -2,9 +2,9 @@ name: schedule
 
 on:
   schedule: 
-   - cron: "54 11 * * *"
-   - cron: "54 14 * * *"
-   - cron: "54 08 * * *"
+   - cron: "1 12 * * *"
+   - cron: "1 15 * * *"
+   - cron: "1 8 * * *"
   pull_request:
     branches: [ "master" ]
   
