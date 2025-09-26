@@ -6,7 +6,7 @@ on:
    - cron: "52 14 * * *"
    - cron: "52 08 * * *"
   pull_request:
-    branches: [ master, release/develop ]
+    branches: [ "master" ]
   
 
 env: 
