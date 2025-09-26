@@ -24,8 +24,7 @@ jobs:
     container: cypress/browsers:22.15.0
     steps:
       - name: Remove files from specific directory 
-        run: cd allure-results &&
-            rm -rf allure-results/*.xml  && rm -rf allure-results/*.json
+        run: rm -rf allure-results/*.xml  && rm -rf allure-results/*.json
       - name: Checkout
         uses: actions/checkout@v4     
       - name: Cypress run 
