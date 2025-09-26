@@ -2,7 +2,7 @@ name: schedule
 
 on:
   schedule:  
-   - cron: "45 15 * * *"
+   - cron: "55 15 * * *"
    
 env: 
   DEFAULT_BROWSER: "chrome"
