@@ -11,19 +11,10 @@ on:
         description: 'Select a tag, for example: @regression / @smoke / @login'
         required: false
         default: '@regression'
-  pull_request:
-    branches: [ master, release/develop ]
-  push:
-    branches: master  
-  schedule: 
-   - cron: "0 15 * * *"
-   - cron: "0 18 * * *"
-   - cron: "0 12 * * *"
 
 env: 
   DEFAULT_BROWSER: "chrome"
-  DEFAULT_TAG: "@regression"
-  TZ: "America/Sao_Paulo"
+  DEFAULT_TAG: "@regression" 
 
 jobs:
   test:
