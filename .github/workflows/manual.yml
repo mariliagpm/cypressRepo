@@ -33,8 +33,6 @@ jobs:
         uses: cypress-io/github-action@v6
         with: 
           command: npx cypress run --browser ${{github.event.inputs.browser || env.DEFAULT_BROWSER}} --env grepTags=${{github.event.inputs.tag || env.DEFAULT_TAG}}
-      - name: Clean Allure results directory
-        run: rm -rf allure-results # Adjust 'allure-results' if your results are in a different folder
       - name: Generate Allure Report
         uses: simple-elf/allure-report-action@master
         id: allure-report
