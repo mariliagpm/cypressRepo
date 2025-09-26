@@ -45,7 +45,7 @@ jobs:
         id: allure-results
         with:
           name: allure-results
-          path: allure-results
+          path: /allure-results
           if-no-files-found: error
           retention-days: 20
         env: 
