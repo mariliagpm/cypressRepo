@@ -20,7 +20,10 @@ import '@shelex/cypress-allure-plugin';
  
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
- require('cypress-xpath');
+require('cypress-xpath'); 
+require('@cypress/grep')
+const registerCypressGrep = require('@bahmutov/cy-grep')
+registerCypressGrep()
 
 Cypress.Screenshot.defaults({
   screenshotOnRunFailure: false

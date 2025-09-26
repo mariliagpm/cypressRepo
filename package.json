@@ -1,5 +1,7 @@
 {
   "devDependencies": {
+    "@bahmutov/cy-grep": "^2.0.36",
+    "@cypress/grep": "^5.0.0",
     "@mmisty/cypress-allure-adapter": "^3.3.0",
     "@shelex/cypress-allure-plugin": "^2.41.2",
     "allure-commandline": "^2.34.1",
@@ -181,8 +183,7 @@
   "scripts": {
     "test-allure": "npx cypress run --spec cypress/e2e --reporter mocha-allure-reporter --env allure=true",
     "allure:report": "allure generate allure-results --clean -o allure-report && allure open allure-report",
-    "execute:report": "npm run test-allure && npm run allure:report",
-    "type": "module"
+    "execute:report": "npm run test-allure && npm run allure:report"
   },
   "keywords": [],
   "author": "",

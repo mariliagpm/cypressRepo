@@ -83,7 +83,7 @@ describe('TesteSuit', () => {
 
     })
 
- it('testing6', () => {
+ it('testing6', { tags: ['@regression'] }, () => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')
@@ -97,7 +97,7 @@ describe('TesteSuit', () => {
     })   
 
 
-    it('testing7', () => {
+    it('testing7' , { tags: ['@smoke'] },() => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')
@@ -111,7 +111,7 @@ describe('TesteSuit', () => {
     })   
 
 
-    it('testing18', () => {
+    it('testing18 ' ,{ tags: ['@smoke'] }, () => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')
@@ -125,7 +125,7 @@ describe('TesteSuit', () => {
     })   
    
 
-    it('testing299', () => {
+    it('testing299', { tags: ['@smoke'] }, () => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')
