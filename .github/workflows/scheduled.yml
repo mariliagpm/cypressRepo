@@ -1,11 +1,8 @@
 name: schedule
 
 on:
-  schedule: 
-   - cron: "14 12 * * *"
-   - cron: "14 15 * * *"
-   - cron: "14 8 * * *"
-   - cron: "20 15 * * *"
+  schedule:  
+   - cron: "27 15 * * *"
   push:
     branches: master
   
