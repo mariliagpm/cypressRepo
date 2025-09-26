@@ -125,13 +125,13 @@ describe('TesteSuit', () => {
     })   
    
 
-    it('testing9', () => {
+    it('testing199', () => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')
         loginPage.checkHeader();
-        loginPage.fillUserName("data.username");
-        loginPage.fillPassword("data.password");
+        loginPage.fillUserName(data.username);
+        loginPage.fillPassword(data.password);
         loginPage.clickLoginButton();
         cy.url().should('eq','https://www.saucedemo.com/inventory.html')
         homePage.checkHeader();
