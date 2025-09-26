@@ -2,9 +2,9 @@ name: schedule
 
 on:
   schedule: 
-   - cron: "52 11 * * *"
-   - cron: "52 14 * * *"
-   - cron: "52 08 * * *"
+   - cron: "54 11 * * *"
+   - cron: "54 14 * * *"
+   - cron: "54 08 * * *"
   pull_request:
     branches: [ "master" ]
   
@@ -12,7 +12,6 @@ on:
 env: 
   DEFAULT_BROWSER: "chrome"
   DEFAULT_TAG: "@regression"
-  TZ: "America/Sao_Paulo"
 
 jobs:
   test:
