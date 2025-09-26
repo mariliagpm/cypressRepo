@@ -2,9 +2,9 @@ name: schedule
 
 on:
   schedule: 
-   - cron: "3 12 * * *"
-   - cron: "3 15 * * *"
-   - cron: "3 8 * * *"
+   - cron: "9 12 * * *"
+   - cron: "9 15 * * *"
+   - cron: "9 8 * * *"
   push:
     branches: master
   
