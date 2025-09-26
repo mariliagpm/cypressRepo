@@ -14,11 +14,12 @@ on:
   pull_request:
     branches: [ master, release/develop ]
   schedule: 
-   - cron: "14 20 * * *"
+   - cron: "11 26 * * *"
 
 env: 
   DEFAULT_BROWSER: "chrome"
   DEFAULT_TAG: "@regression"
+  TZ: "America/Sao_Paulo"
 
 jobs:
   test:
