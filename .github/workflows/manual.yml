@@ -31,7 +31,7 @@ jobs:
       - name: Cypress run 
         uses: cypress-io/github-action@v6
         with: 
-          command: npx cypress run --browser ${{github.event.inputs.browser || env.DEFAULT_BROWSER}} --env grepTags=${{github.event.inputs.tag || env.DEFAULT_TAG}}  allure=true --reporter mocha-allure-reporter 
+          command: npx cypress run --browser ${{github.event.inputs.browser || env.DEFAULT_BROWSER}} --env grepTags=${{github.event.inputs.tag || env.DEFAULT_TAG}} allure=true --reporter mocha-allure-reporter 
       - name: Generate Allure Report
         uses: simple-elf/allure-report-action@master
         id: allure-report

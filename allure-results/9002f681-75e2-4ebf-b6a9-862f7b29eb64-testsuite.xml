@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1758918419411' stop='1758918425065'>
+    <name>TesteSuit</name>
+    <title>TesteSuit</title>
+    <test-cases>
+        <test-case start='1758918419437' status='passed' stop='1758918421668'>
+            <name>testing7</name>
+            <title>testing7</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1758918421703' status='passed' stop='1758918422702'>
+            <name>testing18 </name>
+            <title>testing18 </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1758918422712' status='passed' stop='1758918423480'>
+            <name>testing299</name>
+            <title>testing299</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1758918423492' status='passed' stop='1758918424251'>
+            <name>testing399</name>
+            <title>testing399</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1758918424263' status='passed' stop='1758918425065'>
+            <name>testing499</name>
+            <title>testing499</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
