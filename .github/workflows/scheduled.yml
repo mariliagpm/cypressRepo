@@ -2,11 +2,8 @@ name: schedule
 
 on:
   schedule:  
-   - cron: "33 15 * * *"
-  push:
-    branches: master
-  
-
+   - cron: "45 15 * * *"
+   
 env: 
   DEFAULT_BROWSER: "chrome"
   DEFAULT_TAG: "@regression"
