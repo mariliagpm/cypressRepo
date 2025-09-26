@@ -1,10 +1,10 @@
-name: Execution
+name: schedule
 
 on:
   schedule: 
-   - cron: "47 11 * * *"
-   - cron: "47 14 * * *"
-   - cron: "47 08 * * *"
+   - cron: "52 11 * * *"
+   - cron: "52 14 * * *"
+   - cron: "52 08 * * *"
   pull_request:
     branches: [ master, release/develop ]
   
