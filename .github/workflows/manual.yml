@@ -40,7 +40,7 @@ jobs:
           allure_results: allure-results
           allure_history: allure-history
           keep_reports: 20
-         - name: Upload Allure Results
+      - name: Upload Allure Results
         uses: actions/upload-artifact@v4.0.0
         id: allure-results
         with:
