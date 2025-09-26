@@ -15,6 +15,7 @@ on:
     branches: [ master, release/develop ]
   schedule: 
    - cron: "35 11 * * *"
+   - cron: "38 14 * * *"
 
 env: 
   DEFAULT_BROWSER: "chrome"
