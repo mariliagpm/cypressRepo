@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1758850546712' stop='1758850556229'>
+    <name>TesteSuit</name>
+    <title>TesteSuit</title>
+    <test-cases>
+        <test-case start='1758850546719' status='passed' stop='1758850549168'>
+            <name>testing1</name>
+            <title>testing1</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1758850549181' status='passed' stop='1758850550547'>
+            <name>testing2</name>
+            <title>testing2</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1758850550560' status='passed' stop='1758850551610'>
+            <name>testing3</name>
+            <title>testing3</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1758850551621' status='passed' stop='1758850552688'>
+            <name>testing4</name>
+            <title>testing4</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1758850552698' status='passed' stop='1758850553723'>
+            <name>testing5</name>
+            <title>testing5</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1758850553733' status='passed' stop='1758850554732'>
+            <name>testing6</name>
+            <title>testing6</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1758850554752' status='passed' stop='1758850556229'>
+            <name>testing7</name>
+            <title>testing7</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
