@@ -14,8 +14,9 @@ on:
   pull_request:
     branches: [ master, release/develop ]
   schedule: 
-   - cron: "35 11 * * *"
-   - cron: "38 14 * * *"
+   - cron: "40 11 * * *"
+   - cron: "40 14 * * *"
+   - cron: "40 08 * * *"
 
 env: 
   DEFAULT_BROWSER: "chrome"
