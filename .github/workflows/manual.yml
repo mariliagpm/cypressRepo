@@ -27,6 +27,9 @@ env:
 
 jobs:
   test:
+  - name: Remove files from specific directory
+        run:|
+          rm -rf allure-results
     name: Cypress run
     runs-on: ubuntu-latest
     container: cypress/browsers:22.15.0
@@ -58,7 +61,7 @@ jobs:
             GITHUB_TOKEN: ${{ github.token }} 
             MYID: ${{ steps.allure-results.outputs.artifact-id }}
             MYURL: ${{ steps.allure-results.outputs.artifact-url }}      
-      - name: Output artifact URL test1
+      - name: Output artifact URL
         run:  echo 'Allure report can be download on ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts/${{ steps.allure-results.outputs.artifact-id }}'
       - name: Get Allure history (optional)
         uses: actions/checkout@v4.1.1
