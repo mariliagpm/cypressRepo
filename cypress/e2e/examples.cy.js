@@ -165,7 +165,7 @@ describe('TesteSuit', () => {
 
     })   
 
-     it('testing40', { tags: ['@tag2'] }, () => {
+     it('testing4001', { tags: ['@tag2'] }, () => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')
@@ -178,7 +178,7 @@ describe('TesteSuit', () => {
 
     })   
 
-    it('testing40', { tags: ['@tag1'] }, () => {
+    it('testing4000', { tags: ['@tag1'] }, () => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')
