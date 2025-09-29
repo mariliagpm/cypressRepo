@@ -2,7 +2,7 @@ name: Schedule
 
 on:
   schedule:  
-   - cron: "45 12 * * *"
+   - cron: "30 13 * * *"
    - cron: "20 17 * * *"
    
 env: 

@@ -1,3 +1,3 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","2289","testing1","","Mon Sep 29 09:54:58 GMT-03:00 2025","passed","Mon Sep 29 09:55:00 GMT-03:00 2025","","TesteSuit","TesteSuit","testing1"
-"","1102","testing2","","Mon Sep 29 09:55:00 GMT-03:00 2025","passed","Mon Sep 29 09:55:01 GMT-03:00 2025","","TesteSuit","TesteSuit","testing2"
+"","794","testing2","","Mon Sep 29 09:59:24 GMT-03:00 2025","passed","Mon Sep 29 09:59:25 GMT-03:00 2025","","TesteSuit","TesteSuit","testing2"
+"","1532","testing1","","Mon Sep 29 09:59:23 GMT-03:00 2025","passed","Mon Sep 29 09:59:24 GMT-03:00 2025","","TesteSuit","TesteSuit","testing1"
