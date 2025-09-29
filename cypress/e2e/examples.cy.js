@@ -29,7 +29,22 @@ describe('TesteSuit', () => {
     })
 
 
-    it('testing2', () => {
+     it('testing2',  { tags: ['@smoke'] }, () => {
+        const loginPage = new LoginPage();
+        const homePage= new HomePage();
+        cy.visit('/')
+         cy.screenshot('home-page')
+        loginPage.checkHeader();
+        loginPage.fillUserName(data.username);
+        loginPage.fillPassword(data.password);
+        loginPage.clickLoginButton();
+        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+        homePage.checkHeader();
+
+    })
+
+
+    it('testing3', () => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')
