@@ -20,7 +20,20 @@ describe('TesteSuite', () => {
        homePage.fillUsername(data.username)
        homePage.fillPassword(data.password)
        homePage.clickSubmitButton()
+        
+       cy.get('[data-test="inventory-item-name"]').each(($element,index, $list)=>{
+        cy.log(`name at index ${index} : ${$element.text()}`)
+        if(index == 1){
+            let text = $element.text();
+            cy.wrap(text).as('text')
+        }
+       })
        cy.screenshot('Home Page');
+
+       cy.get('@text').then(txt=>{
+        
+        cy.log(`text one ${txt}`)
+       })
 
     })
 
