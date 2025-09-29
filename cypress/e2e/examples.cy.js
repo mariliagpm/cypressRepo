@@ -4,7 +4,7 @@ import HomePage from "../support/pages/HomePage/HomePage"
 var data;
  
 
-describe('TesteSuit', () => {
+describe('TesteSuite', () => {
     before(() => {
 
         cy.fixture('data.json').then(function (data1) {
