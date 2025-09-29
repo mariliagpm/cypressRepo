@@ -1,4 +1,6 @@
+import HomePage from "../support/pages/HomePage/HomePage";
 import HomePage2 from "../support/pages/HomePage2/HomePage2";
+import LoginPage from "../support/pages/LoginPage/LoginPage";
 
  
 var data ;
@@ -37,7 +39,18 @@ describe('TesteSuite 2', () => {
 
     })
 
- 
+   it('testing3', () => {
+        const loginPage = new LoginPage();
+        const homePage= new HomePage();
+        cy.visit('/')
+        loginPage.checkHeader();
+        loginPage.fillUserName(data.username);
+        loginPage.fillPassword(data.password);
+        loginPage.clickLoginButton();
+        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+        homePage.checkHeader();
+
+    })
 
 
 
