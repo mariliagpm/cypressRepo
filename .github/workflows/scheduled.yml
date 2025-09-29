@@ -5,6 +5,9 @@ on:
    - cron: "15 14 * * *"
    - cron: "30 20 * * *"
    - cron: "45 10 * * *"
+  push:
+    branches:
+      - master    
    
 env: 
   DEFAULT_BROWSER: "chrome"
