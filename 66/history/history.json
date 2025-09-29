@@ -1,1 +1,0 @@
-{"6d8042a56db96903f63a5324d905b154":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"202bc9ca501d1193","reportUrl":"https://mariliagpm.github.io/cypressRepo/66/#testresult/202bc9ca501d1193","status":"passed","time":{"start":1759154418706,"stop":1759154420659,"duration":1953}}]}}
