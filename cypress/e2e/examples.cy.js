@@ -14,10 +14,11 @@ describe('TesteSuit', () => {
 
     })
 
-    it('testing1', () => {
+    it('testing1',  { tags: ['@smoke'] }, () => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')
+         cy.screenshot('home-page')
         loginPage.checkHeader();
         loginPage.fillUserName(data.username);
         loginPage.fillPassword(data.password);
@@ -43,192 +44,192 @@ describe('TesteSuit', () => {
 
 
 
-        it('testing3'  , () => {
-        const loginPage = new LoginPage();
-        const homePage= new HomePage();
-        cy.visit('/')
-        loginPage.checkHeader();
-        loginPage.fillUserName(data.username);
-        loginPage.fillPassword(data.password);
-        loginPage.clickLoginButton();
-        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
-        homePage.checkHeader();
+//         it('testing3'  , () => {
+//         const loginPage = new LoginPage();
+//         const homePage= new HomePage();
+//         cy.visit('/')
+//         loginPage.checkHeader();
+//         loginPage.fillUserName(data.username);
+//         loginPage.fillPassword(data.password);
+//         loginPage.clickLoginButton();
+//         cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+//         homePage.checkHeader();
 
-    })
+//     })
 
-     it('testing4', () => {
-        const loginPage = new LoginPage();
-        const homePage= new HomePage();
-        cy.visit('/')
-        loginPage.checkHeader();
-        loginPage.fillUserName(data.username);
-        loginPage.fillPassword(data.password);
-        loginPage.clickLoginButton();
-        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
-        homePage.checkHeader();
+//      it('testing4', () => {
+//         const loginPage = new LoginPage();
+//         const homePage= new HomePage();
+//         cy.visit('/')
+//         loginPage.checkHeader();
+//         loginPage.fillUserName(data.username);
+//         loginPage.fillPassword(data.password);
+//         loginPage.clickLoginButton();
+//         cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+//         homePage.checkHeader();
 
-    })
+//     })
 
     
-    it('testing5', () => {
-        const loginPage = new LoginPage();
-        const homePage= new HomePage();
-        cy.visit('/')
-        loginPage.checkHeader();
-        loginPage.fillUserName(data.username);
-        loginPage.fillPassword(data.password);
-        loginPage.clickLoginButton();
-        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
-        homePage.checkHeader();
+//     it('testing5', () => {
+//         const loginPage = new LoginPage();
+//         const homePage= new HomePage();
+//         cy.visit('/')
+//         loginPage.checkHeader();
+//         loginPage.fillUserName(data.username);
+//         loginPage.fillPassword(data.password);
+//         loginPage.clickLoginButton();
+//         cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+//         homePage.checkHeader();
 
-    })
+//     })
 
- it('testing6', { tags: ['@regression'] }, () => {
-        const loginPage = new LoginPage();
-        const homePage= new HomePage();
-        cy.visit('/')
-        loginPage.checkHeader();
-        loginPage.fillUserName(data.username);
-        loginPage.fillPassword(data.password);
-        loginPage.clickLoginButton();
-        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
-        homePage.checkHeader();
+//  it('testing6', { tags: ['@regression'] }, () => {
+//         const loginPage = new LoginPage();
+//         const homePage= new HomePage();
+//         cy.visit('/')
+//         loginPage.checkHeader();
+//         loginPage.fillUserName(data.username);
+//         loginPage.fillPassword(data.password);
+//         loginPage.clickLoginButton();
+//         cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+//         homePage.checkHeader();
 
-    })   
-
-
-    it('testing7' , { tags: ['@smoke'] },() => {
-        const loginPage = new LoginPage();
-        const homePage= new HomePage();
-        cy.visit('/')
-        loginPage.checkHeader();
-        loginPage.fillUserName(data.username);
-        loginPage.fillPassword(data.password);
-        loginPage.clickLoginButton();
-        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
-        homePage.checkHeader();
-
-    })   
+//     })   
 
 
-    it('testing8 ' ,{ tags: ['@smoke'] }, () => {
-        const loginPage = new LoginPage();
-        const homePage= new HomePage();
-        cy.visit('/')
-        loginPage.checkHeader();
-        loginPage.fillUserName(data.username);
-        loginPage.fillPassword(data.password);
-        loginPage.clickLoginButton();
-        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
-        homePage.checkHeader();
+//     it('testing7' , { tags: ['@smoke'] },() => {
+//         const loginPage = new LoginPage();
+//         const homePage= new HomePage();
+//         cy.visit('/')
+//         loginPage.checkHeader();
+//         loginPage.fillUserName(data.username);
+//         loginPage.fillPassword(data.password);
+//         loginPage.clickLoginButton();
+//         cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+//         homePage.checkHeader();
 
-    })   
+//     })   
+
+
+//     it('testing8 ' ,{ tags: ['@smoke'] }, () => {
+//         const loginPage = new LoginPage();
+//         const homePage= new HomePage();
+//         cy.visit('/')
+//         loginPage.checkHeader();
+//         loginPage.fillUserName(data.username);
+//         loginPage.fillPassword(data.password);
+//         loginPage.clickLoginButton();
+//         cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+//         homePage.checkHeader();
+
+//     })   
    
 
-    it('testing9', { tags: ['@smoke', '@regression'] }, () => {
-        const loginPage = new LoginPage();
-        const homePage= new HomePage();
-        cy.visit('/')
-        loginPage.checkHeader();
-        loginPage.fillUserName(data.username);
-        loginPage.fillPassword(data.password);
-        loginPage.clickLoginButton();
-        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
-        homePage.checkHeader();
+//     it('testing9', { tags: ['@smoke', '@regression'] }, () => {
+//         const loginPage = new LoginPage();
+//         const homePage= new HomePage();
+//         cy.visit('/')
+//         loginPage.checkHeader();
+//         loginPage.fillUserName(data.username);
+//         loginPage.fillPassword(data.password);
+//         loginPage.clickLoginButton();
+//         cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+//         homePage.checkHeader();
 
-    })   
-
-
-    it('testing10', { tags: ['@smoke'] }, () => {
-        const loginPage = new LoginPage();
-        const homePage= new HomePage();
-        cy.visit('/')
-        loginPage.checkHeader();
-        loginPage.fillUserName(data.username);
-        loginPage.fillPassword(data.password);
-        loginPage.clickLoginButton();
-        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
-        homePage.checkHeader();
-
-    })   
-
-    it('testing11', { tags: ['@tag2'] }, () => {
-        const loginPage = new LoginPage();
-        const homePage= new HomePage();
-        cy.visit('/')
-        loginPage.checkHeader();
-        loginPage.fillUserName(data.username);
-        loginPage.fillPassword(data.password);
-        loginPage.clickLoginButton();
-        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
-        homePage.checkHeader();
-
-    })   
-
-     it('testing4001', { tags: ['@tag2'] }, () => {
-        const loginPage = new LoginPage();
-        const homePage= new HomePage();
-        cy.visit('/')
-        loginPage.checkHeader();
-        loginPage.fillUserName(data.username);
-        loginPage.fillPassword(data.password);
-        loginPage.clickLoginButton();
-        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
-        homePage.checkHeader();
-
-    })   
-
-    it('testing4000', { tags: ['@tag1'] }, () => {
-        const loginPage = new LoginPage();
-        const homePage= new HomePage();
-        cy.visit('/')
-        loginPage.checkHeader();
-        loginPage.fillUserName(data.username);
-        loginPage.fillPassword(data.password);
-        loginPage.clickLoginButton();
-        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
-        homePage.checkHeader();
-
-    })   
-
-    it('testing40023', { tags: ['@tag1'] }, () => {
-        const loginPage = new LoginPage();
-        const homePage= new HomePage();
-        cy.visit('/')
-        loginPage.checkHeader();
-        loginPage.fillUserName(data.username);
-        loginPage.fillPassword(data.password);
-        loginPage.clickLoginButton();
-        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
-        homePage.checkHeader();
-
-    })   
-
-    it('testing40022', { tags: ['@tag1'] }, () => {
-        const loginPage = new LoginPage();
-        const homePage= new HomePage();
-        cy.visit('/')
-        loginPage.checkHeader();
-        loginPage.fillUserName(data.username);
-        loginPage.fillPassword(data.password);
-        loginPage.clickLoginButton();
-        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
-        homePage.checkHeader();
-
-    })   
+//     })   
 
 
-     it('testing400300', { tags: ['@tag3'] }, () => {
-        const loginPage = new LoginPage();
-        const homePage= new HomePage();
-        cy.visit('/')
-        loginPage.checkHeader();
-        loginPage.fillUserName(data.username);
-        loginPage.fillPassword(data.password);
-        loginPage.clickLoginButton();
-        cy.url().should('eq','https://www.saucedemo.com/inventory.html')
-        homePage.checkHeader();
+//     it('testing10', { tags: ['@smoke'] }, () => {
+//         const loginPage = new LoginPage();
+//         const homePage= new HomePage();
+//         cy.visit('/')
+//         loginPage.checkHeader();
+//         loginPage.fillUserName(data.username);
+//         loginPage.fillPassword(data.password);
+//         loginPage.clickLoginButton();
+//         cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+//         homePage.checkHeader();
 
-    })   
+//     })   
+
+//     it('testing11', { tags: ['@tag2'] }, () => {
+//         const loginPage = new LoginPage();
+//         const homePage= new HomePage();
+//         cy.visit('/')
+//         loginPage.checkHeader();
+//         loginPage.fillUserName(data.username);
+//         loginPage.fillPassword(data.password);
+//         loginPage.clickLoginButton();
+//         cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+//         homePage.checkHeader();
+
+//     })   
+
+//      it('testing4001', { tags: ['@tag2'] }, () => {
+//         const loginPage = new LoginPage();
+//         const homePage= new HomePage();
+//         cy.visit('/')
+//         loginPage.checkHeader();
+//         loginPage.fillUserName(data.username);
+//         loginPage.fillPassword(data.password);
+//         loginPage.clickLoginButton();
+//         cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+//         homePage.checkHeader();
+
+//     })   
+
+//     it('testing4000', { tags: ['@tag1'] }, () => {
+//         const loginPage = new LoginPage();
+//         const homePage= new HomePage();
+//         cy.visit('/')
+//         loginPage.checkHeader();
+//         loginPage.fillUserName(data.username);
+//         loginPage.fillPassword(data.password);
+//         loginPage.clickLoginButton();
+//         cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+//         homePage.checkHeader();
+
+//     })   
+
+//     it('testing40023', { tags: ['@tag1'] }, () => {
+//         const loginPage = new LoginPage();
+//         const homePage= new HomePage();
+//         cy.visit('/')
+//         loginPage.checkHeader();
+//         loginPage.fillUserName(data.username);
+//         loginPage.fillPassword(data.password);
+//         loginPage.clickLoginButton();
+//         cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+//         homePage.checkHeader();
+
+//     })   
+
+//     it('testing40022', { tags: ['@tag1'] }, () => {
+//         const loginPage = new LoginPage();
+//         const homePage= new HomePage();
+//         cy.visit('/')
+//         loginPage.checkHeader();
+//         loginPage.fillUserName(data.username);
+//         loginPage.fillPassword(data.password);
+//         loginPage.clickLoginButton();
+//         cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+//         homePage.checkHeader();
+
+//     })   
+
+
+//      it('testing400300', { tags: ['@tag3'] }, () => {
+//         const loginPage = new LoginPage();
+//         const homePage= new HomePage();
+//         cy.visit('/')
+//         loginPage.checkHeader();
+//         loginPage.fillUserName(data.username);
+//         loginPage.fillPassword(data.password);
+//         loginPage.clickLoginButton();
+//         cy.url().should('eq','https://www.saucedemo.com/inventory.html')
+//         homePage.checkHeader();
+
+//     })   
    
 })
