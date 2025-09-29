@@ -18,7 +18,7 @@ describe('TesteSuit', () => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')
-         cy.screenshot('home-page')
+       //  cy.screenshot('home-page')
         loginPage.checkHeader();
         loginPage.fillUserName(data.username);
         loginPage.fillPassword(data.password);
@@ -33,7 +33,7 @@ describe('TesteSuit', () => {
         const loginPage = new LoginPage();
         const homePage= new HomePage();
         cy.visit('/')
-         cy.screenshot('home-page')
+        // cy.screenshot('home-page')
         loginPage.checkHeader();
         loginPage.fillUserName(data.username);
         loginPage.fillPassword(data.password);
