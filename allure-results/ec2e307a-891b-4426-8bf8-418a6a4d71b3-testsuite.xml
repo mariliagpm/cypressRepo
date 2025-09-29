@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1759148205617' stop='1759148210492'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1759149290917' stop='1759149296932'>
     <name>TesteSuit</name>
     <title>TesteSuit</title>
     <test-cases>
-        <test-case start='1759148205655' status='passed' stop='1759148207980'>
+        <test-case start='1759149290957' status='passed' stop='1759149293468'>
             <name>testing7</name>
             <title>testing7</title>
             <labels/>
@@ -11,7 +11,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1759148208003' status='passed' stop='1759148208914'>
+        <test-case start='1759149293498' status='passed' stop='1759149294433'>
             <name>testing8 </name>
             <title>testing8 </title>
             <labels/>
@@ -19,7 +19,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1759148208924' status='passed' stop='1759148209698'>
+        <test-case start='1759149294450' status='passed' stop='1759149295369'>
             <name>testing9</name>
             <title>testing9</title>
             <labels/>
@@ -27,7 +27,7 @@
             <steps/>
             <attachments/>
         </test-case>
-        <test-case start='1759148209708' status='passed' stop='1759148210492'>
+        <test-case start='1759149295379' status='passed' stop='1759149296932'>
             <name>testing10</name>
             <title>testing10</title>
             <labels/>
