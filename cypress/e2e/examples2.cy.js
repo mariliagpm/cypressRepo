@@ -3,7 +3,7 @@ import HomePage2 from "../support/pages/HomePage2/HomePage2";
  
 var data ;
 
-describe('TesteSuite', () => {
+describe('TesteSuite 2', () => {
     before(() => {
 
         cy.fixture('data.json').then(function (data1) {
